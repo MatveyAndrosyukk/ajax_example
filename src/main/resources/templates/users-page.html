@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Users</title>
+    <script type="text/javascript" th:src="@{/static/js/jquery-3.6.0.min.js}"></script>
+    <script type="text/javascript" th:src="@{/static/js/script.js}"></script>
+</head>
+<body>
+<div id="test_user">
+    <table id="tbl">
+        <thead>
+            <th>Телефон</th>
+            <th>Имя</th>
+            <th>Удалить</th>
+        </thead>
+        <tbody id="user_table_body">
+        </tbody>
+    </table>
+</div>
+<form id="addForm">
+    <input id="inp_phone" type="text" placeholder="Введите номер"/>
+    <input id="inp_name" type="text" placeholder="Введите имя"/>
+    <input id="btn" type="button" value="Добавить" onclick="addUser()"/>
+</form>
+</body>
+</html>
